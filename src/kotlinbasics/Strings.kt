@@ -47,3 +47,5 @@ Couldn't put Humpty together again.""")
     """.trimMargin("|"))
 
 }
+
+fun aTopLevelFunction(str: String): String = "Printing from a Top Level Function - $str"
