@@ -1,4 +1,4 @@
-package AdventOfCode;
+package AdventOfCode.Day1;
 
 import java.io.File;
 import java.io.FileReader;
@@ -18,7 +18,6 @@ public class Day1 {
                 String nextLine = sc.nextLine();
                 if(nextLine.isEmpty()){
                     if(currSum > highest){
-                        System.out.println("currSum>highest");
                         thirdHighest = secondHighest;
                         secondHighest = highest;
                         highest = currSum;
