@@ -15,14 +15,15 @@ fun main(){
     println(parseStringToNum("22.43"))
     println(parseStringToNum("22"))
 
-    //
+    // If a method is always going to throw an exception , then it's return type will be nothing
+
 }
 
-fun parseStringToNum(str: String): Int {
+fun parseStringToNum(str: String): Int? {
     return try {
         Integer.parseInt(str)
     } catch (e: NumberFormatException){
-        0
+         null
     } finally {
         println("Inside finally block")
         // No value will be evver returned from finally block, it's going to be ignored
